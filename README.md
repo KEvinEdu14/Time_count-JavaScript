@@ -1,22 +1,44 @@
-# Node.js Clock Docker Project
 
-This project is a simple Node.js application that logs the current time to the console every second. The application is containerized using Docker, making it easy to deploy in any environment.
+# Time_count-JavaScript Project
 
-## Description
+This is a simple JavaScript project that prints the current time to the console every second.
 
-The `index.js` file contains a script that uses `setInterval` to repeatedly log the current time in `HH:MM:SS` format every second. This provides a continuous display of the current time in the console.
-
-## Files
-
-- `index.js`: Node.js script that logs the current time every second.
-- `package.json`: Configuration file for the Node.js project, including dependencies and the start script.
-- `Dockerfile`: Docker configuration file to build and run the application.
-
-## Technology Version
-
-- **Node.js**: Version 14 (specified in the Dockerfile)
-- **Docker**: Compatible with the latest version (required for containerization)
+## Technologies Used
+- Language: JavaScript (Node.js)
+- Container: Docker
 
 ## Prerequisites
+- Docker installed
+- Node.js installed locally (optional for direct execution without Docker)
 
-- [Docker](https://docs.docker.com/get-docker/) installed on your machine.
+## Project Files
+- *index.js*: Main file of the project that prints the current time to the console every second.
+- *Dockerfile*: Docker file for building the Docker image.
+- *package.json*: Configuration file for Node.js, specifying dependencies and startup script.
+
+## Create Docker Image
+
+Run the following command in the project directory:
+~~~
+docker build -t kevineduardo14/timecount .
+~~~
+## Run the Docker Container
+~~~
+docker run kevineduardo14/timecount
+~~~
+
+## Login the Docker Hub
+~~~
+docker login
+~~~
+## Docker Desktop pull in Docker Hub
+~~~
+docker pull kevineduardo14/timecount
+~~~
+
+## Imagen in Docker Hub
+
+https://hub.docker.com/repository/docker/kevineduardo14/timecount/general
+
+# RailWay
+We log in and link to GitHub to deploy the repositories.
